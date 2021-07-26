@@ -1,0 +1,36 @@
+{% extends 'app/base.html' %} 
+{% load static %} 
+{% block title%}Contact{% endblock %} 
+{% block content %}
+<div class="container-fluid mt-4">
+    <img src="{% static 'images/c1.jpg' %}" alt="About" height="100%" width="100%">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-4 mt-4">
+            <div class="card" style="width: 18rem;  height: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Location</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ducimus quidem sequi, rem ad dolore, sint neque expedita explicabo, fugit eius nam quod sit illo aliquid voluptatem quaerat repellat. Ducimus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+            <div class="card" style="width: 18rem; height: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">E-mail</h5>
+                    <p class="card-text">asdffg@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+            <div class="card" style="width: 18rem;  height: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Contact number</h5>
+                    <p class="card-text">484354635469</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends 'app/base.html' %}
+{% load static %} 
+{% block title %}Home{% endblock %} 
+{% block content %}
+<div class="container-fluid">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/home1.jpg' %}" alt="not loaded" width="500" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/home2.jpg' %}" alt="not loaded" width="500" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/home3.jpg' %}" alt="not loaded" width="500" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/home4.jpg' %}" alt="not loaded" width="500" height="500">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="heading text-white text-center mt-4">
+        <h3>HELLO PEOPLE</h3>
+    </div>
+    <div class="text text-dark text-center">At UClean, we are building India's first organized chain of laundry and home cleaning stores, focused on fostering the DIY (Do It Yourself) culture. With technology at the heart of the brand, UClean also enables the time crunched customers to avail pick-n- drop service from the comforts of their home or office.</div>
+    <div class="text text-dark text-center mt-2">Pick My Laundry provides affordable and convenient way of getting your wash, laundry and dryclean done with prime quality. Our instant pickup at a slot chosen by you with a turnaround time of 48 hours provides you laundry and dry cleaning with best quality. The processing of washing, laundry and dry cleaning is done in best-class setups with Italian equipment and German chemicals. We also do laundry with antiseptic wash, fabric softener and hygienic detergents. You can also visit our Live Processing Centre after scheduling a visit with us. We are currently operational in South Delhi, Gurgaon, Noida, Indirapuram, Nagpur, Sonipat.</div>
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-4 mt-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/m1.jpg' %}" alt="Card image cap">
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/m2.jpg' %}" alt="Card image cap">
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/m3.jpg' %}" alt="Card image cap">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 mt-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/m4.jpg' %}" alt="Card image cap">
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/m5.jpg' %}" alt="Card image cap">
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/m6.jpg' %}" alt="Card image cap">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

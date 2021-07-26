@@ -1,0 +1,39 @@
+{% extends 'app/base.html' %} 
+{% load static %} 
+{% block title %}About{% endblock %} 
+{% block content %}
+<div class="container-fluid mt-4">
+    <img src="{% static 'images/c1.jpg' %}" alt="About" height="100%" width="100%">
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4 mt-4">
+            <img src="{% static 'images/a1.jpg' %}" alt="asd" width="490">
+        </div>
+        <div class="col-8">
+            <div class="text text-center text-dark mt-5" style="padding-top: 50px;">
+                <h4>Text</h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae dignissimos enim eos repudiandae, nam nobis blanditiis, ducimus atque ut fugit placeat. Repellat suscipit explicabo magnam quaerat veniam sit esse ab!
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8 mt-4">
+            <div class="text text-center text-dark mt-5" style="padding-top: 50px;">
+                <h4>Text</h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eligendi. Voluptatibus unde voluptatem, laudantium qui deleniti vitae veritatis ad harum officiis odit autem libero? Nam repudiandae illum voluptatibus repellendus dolore.
+            </div>
+        </div>
+        <div class="col-4 mt-5">
+            <img src="{% static 'images/a2.jpg' %}" alt="asd" width="490">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 mt-5">
+            <img src="{% static 'images/a3.jpg' %}" alt="asd" width="490">
+        </div>
+        <div class="col-8">
+            <div class="text text-center text-dark mt-5" style="padding-top: 50px;">
+                <h4>Text</h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe labore rerum, architecto commodi velit sequi, culpa inventore neque accusamus ducimus eaque, unde id officiis doloremque ratione modi numquam ut.
+            </div>
+        </div>
+    </div>
+    {% endblock %}

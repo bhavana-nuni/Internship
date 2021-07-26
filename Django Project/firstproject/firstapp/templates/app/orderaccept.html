@@ -1,0 +1,43 @@
+{% extends 'app/base.html' %}
+{% block title %} Order Dashboard {% endblock %}
+{% block content %}
+<div class="card-dark col-md">
+    <div class="card-body">
+        <h3 class="text-center shadow-lg p-2">Orders</h3>
+        <table class="table table-bordered table-hover">
+            <tr class="bg-dark text-light">
+                <th>Order number</th>
+                <th>Ordered Person</th>
+                <th>Type 1</th>
+                <th>Type 1 q</th>
+                <th>Type 2</th>
+                <th>Type 2 q</th>
+                <th>Type 3</th>
+                <th>Type 3 q</th>
+                <th>Type 4</th>
+                <th>Type 4 q</th>
+                <th>Contact Number</th>
+                <th>Address</th>
+                <th>Order</th>
+            </tr>
+            {% for u in q %}
+            <tr>
+                <td>{{u.id}}</td>
+                <td>{{u.person}}</td>
+                <td>{{u.t1}}</td>
+                <td>{{u.t1q}}</td>
+                <td>{{u.t2}}</td>
+                <td>{{u.t2q}}</td>
+                <td>{{u.t3}}</td>
+                <td>{{u.t3q}}</td>
+                <td>{{u.t4}}</td>
+                <td>{{u.t4q}}</td>
+                <td>{{u.number}}</td>
+                <td>{{u.address}}</td>
+                <td><a href="{% url 'od' u.id %}" class="btn btn-outline-success mx-1">Completed</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+{% endblock %}
